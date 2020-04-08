@@ -6,7 +6,8 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - python laba4.py < text.txt
+  - python laba4.py < text.txt\
+  - coverage run --source=my_package setup.py test
  
 after_success: 
   - coveralls
