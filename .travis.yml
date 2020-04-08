@@ -9,6 +9,6 @@ install:
 # command to run tests
 script:
   - python laba4.py < text.txt
-  - pytest --cov = laba4 /
+  - pytest 
 after_success: 
   - coveralls
