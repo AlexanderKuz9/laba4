@@ -12,5 +12,7 @@ install:
 script:
   - python laba4.py < text.txt
   - sonar-scanner -X
+  - py.test coveralls/tests.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
   
-after_success: "sbt coveralls"
+after_success: 
+  - coveralls
