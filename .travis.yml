@@ -3,10 +3,12 @@ language: python
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install pytest
+  - pip install pytest-cov
   - pip install coveralls
 # command to run tests
 script:
   - python laba4.py < text.txt
- 
+  - pytest --cov=YourModule/
 after_success: 
   - coveralls
