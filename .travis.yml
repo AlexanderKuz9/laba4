@@ -9,6 +9,6 @@ install:
 # command to run tests
 script:
   - python laba4.py < text.txt
-  - pytest --cov=YourModule/
+  - pytest --cov
 after_success: 
   - coveralls
