@@ -1,4 +1,3 @@
 service_name: travis-pro
 repo_token: TRGwz6VfB1FDQvJFMXbN3wITFay5VD36I
 parallel: true
-coverage run --source=my_package setup.py test
