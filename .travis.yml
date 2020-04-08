@@ -12,3 +12,5 @@ install:
 script:
   - python laba4.py < text.txt
   - sonar-scanner -X
+  
+after_success: "sbt coveralls"
