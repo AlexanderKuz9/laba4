@@ -9,7 +9,7 @@ install:
 # command to run tests
 script:
   - python laba4.py < text.txt
-  - pytest --cov=tests/laba4.py
+  - pytest --cov=laba4 tests/
 after_success: 
   - coveralls
 
