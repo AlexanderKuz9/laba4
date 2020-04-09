@@ -9,7 +9,7 @@ install:
 # command to run tests
 script:
   - python laba4.py < text.txt
-  - pytest
+  - coverage run --source=tests/ setup.py test
   
 after_success: 
   - coveralls
