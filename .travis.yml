@@ -10,7 +10,7 @@ install:
 script:
   - python laba4.py < text.txt
   - coverage run --source=tests/ setup.py test
-  - py.test tests/laba4.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - pytest --cov=tests/laba4.py
 after_success: 
   - coveralls
 
