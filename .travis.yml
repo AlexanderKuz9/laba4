@@ -6,12 +6,11 @@ install:
   - pip install pytest
   - pip install pytest-cov
   - pip install coveralls
-  - npm install
 # command to run tests
 script:
   - python laba4.py < text.txt
-  - npm test
-  - npm run coveralls
+  - pytest
+  
 after_success: 
   - coveralls
 
