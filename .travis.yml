@@ -11,6 +11,7 @@ install:
 script:
   - python laba4.py < text.txt
   - npm test
+  - npm run coveralls
 after_success: 
   - coveralls
-  - npm run coveralls
+
